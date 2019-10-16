@@ -1,21 +1,21 @@
 // Your code here
-function mapToNegativize(src) {
+function mapToNegativize(srcarr) {
   let r = []
   for (let i = 0; i < src.length; i++ ) {
-    r.push(-1 * src[i])
+    r.push(-1 * srcarr[i])
   }
   return r
 }
 
-function mapToNoChange(src) {
+function mapToNoChange(srcarr) {
   let r = []
   for (let i = 0; i < src.length; i++ ) {
-    r.push(src[i])
+    r.push(srcarr[i])
   }
   return r
 }
 
-function mapToDouble(src) {
+function mapToDouble(srcarr) {
   let r = []
   for (let i = 0; i < src.length; i++ ) {
     r.push(2 * src[i])
@@ -23,32 +23,32 @@ function mapToDouble(src) {
   return r
 }
 
-function mapToSquare(src) {
+function mapToSquare(srcarr) {
   let r = []
   for (let i = 0; i < src.length; i++ ) {
-    r.push(src[i] * src[i])
+    r.push(src[i] * srcarr[i])
   }
   return r
 }
 
-function reduceToTotal(src, startingPoint=0) {
+function reduceToTotal(srcarr, startingPoint=0) {
   let total = startingPoint
   for (let i = 0; i < src.length; i++ ) {
-    total = total + src[i]
+    total = total + srcarr[i]
   }
   return total
 }
 
-function reduceToAllTrue(src) {
-  for (let i = 0; i < src.length; i++ ) {
-    if (!src[i]) return false
+function reduceToAllTrue(srcarr) {
+  for (let i = 0; i < srcarr.length; i++ ) {
+    if (!srcarr[i]) return false
   }
   return true
 }
 
-function reduceToAnyTrue(src) {
+function reduceToAnyTrue(srcarr) {
   for (let i = 0; i < src.length; i++ ) {
-    if (src[i]) return true
+    if (srcarr[i]) return true
   }
   return false
 }
