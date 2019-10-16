@@ -1,7 +1,7 @@
 // Your code here
 function mapToNegativize(srcarr) {
   let r = []
-  for (let i = 0; i < src.length; i++ ) {
+  for (let i = 0; i < srcarr.length; i++ ) {
     r.push(-1 * srcarr[i])
   }
   return r
@@ -9,7 +9,7 @@ function mapToNegativize(srcarr) {
 
 function mapToNoChange(srcarr) {
   let r = []
-  for (let i = 0; i < src.length; i++ ) {
+  for (let i = 0; i < srcarr.length; i++ ) {
     r.push(srcarr[i])
   }
   return r
