@@ -25,7 +25,7 @@ function mapToDouble(srcarr) {
 
 function mapToSquare(srcarr) {
   let r = []
-  for (let i = 0; i < src.length; i++ ) {
+  for (let i = 0; i < srcarr.length; i++ ) {
     r.push(srcarr[i] * srcarr[i])
   }
   return r
@@ -33,7 +33,7 @@ function mapToSquare(srcarr) {
 
 function reduceToTotal(srcarr, startingPoint=0) {
   let total = startingPoint
-  for (let i = 0; i < src.length; i++ ) {
+  for (let i = 0; i < srcarr.length; i++ ) {
     total = total + srcarr[i]
   }
   return total
@@ -47,7 +47,7 @@ function reduceToAllTrue(srcarr) {
 }
 
 function reduceToAnyTrue(srcarr) {
-  for (let i = 0; i < src.length; i++ ) {
+  for (let i = 0; i < srcarr.length; i++ ) {
     if (srcarr[i]) return true
   }
   return false
